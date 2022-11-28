@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Button } from "../../components/button/Button"
-import image from "../../images/muslim1.jpeg"
+import bannerImg from "../../images/muslim1.jpeg"
 import "./Banner.css"
 
 export const Banner = () => {
@@ -15,7 +15,7 @@ export const Banner = () => {
                 <Button title="Plus" myClick={() => setCount(count + 1)} myStyle={{ marginLeft: "25px", backgroundColor: "green", marginTop: "10px" }} />
 
             </div>
-            <img className="banner-img" src={image} />
+            <img className="banner-img" src={bannerImg} alt="Img of banner" />
         </div>
     )
 }
