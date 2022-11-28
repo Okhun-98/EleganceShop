@@ -2,9 +2,7 @@ import { useEffect } from "react"
 import "./Product.css"
 
 export const Product = () => {
-    useEffect(() => {
-        getProducts()
-    }, [])
+    useEffect(() => getProducts(), [])
 
     const getProducts = async () => {
         const response = await fetch("https://fakestoreapi.com/products")
