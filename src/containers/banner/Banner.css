@@ -1,0 +1,32 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    margin-top: 2%;
+}
+
+.banner-data {
+    height: 100%;
+    width: 48%;
+    background-color: blanchedalmond;
+}
+
+.banner-img {
+    height: 100%;
+    width: 50%;
+}
+
+.banner-title {
+    font-size: 40px;
+    width: 80%;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-left: 25px;
+}
+
+.banner-paragraph {
+    font-size: 24px;
+    width: 60%;
+    font-weight: 600;
+    margin-left: 25px;
+}
