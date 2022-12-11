@@ -1,0 +1,32 @@
+.detail-product {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 35px;
+}
+
+.detail-image {
+    width: 45%;
+    height: 400px;
+}
+
+.detail-data {
+    width: 45%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.detail-title {
+    color: rgb(46, 53, 24);
+    font-size: 30px;
+}
+
+.detail-price {
+    font-size: 35px;
+    color: rgb(180, 114, 65);
+}
+
+.detail-description {
+    font-size: 15px;
+}
