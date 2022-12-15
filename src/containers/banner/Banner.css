@@ -9,6 +9,7 @@
     height: 100%;
     width: 48%;
     background-color: rgb(247, 250, 238);
+
 }
 
 .banner-img {
@@ -29,4 +30,42 @@
     width: 60%;
     font-weight: 600;
     margin-left: 25px;
+}
+
+@media screen and (max-width:1000px) {
+    .banner {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .banner-img {
+        display: none;
+    }
+
+    .banner-data {
+        width: 100%;
+        background-image: url("../../images/muslim1.jpeg");
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .banner {
+        justify-content: center;
+        height: 300px;
+
+    }
+
+    .banner-title {
+        margin: 0px;
+        font-size: 30px;
+        color: greenyellow;
+    }
+
+    .banner-paragraph {
+        color: yellow;
+        font-size: 20px;
+    }
 }

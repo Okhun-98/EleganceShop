@@ -1,0 +1,22 @@
+.basket {}
+
+.basket-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-bottom: solid 1px gray;
+}
+
+.basket-image {
+    width: 150px;
+    height: 150px;
+}
+
+.basket-title {}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
