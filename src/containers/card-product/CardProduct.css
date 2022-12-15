@@ -16,13 +16,13 @@
 
 @media screen and (max-width: 1000px) {
     .card-product {
-        width: 48%;
+        width: 45%;
     }
 }
 
 @media screen and (max-width: 480px) {
     .card-product {
-        width: 96%;
+        width: 90%;
     }
 
 }
