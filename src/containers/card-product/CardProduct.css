@@ -13,3 +13,16 @@
 .card-title {}
 
 .card-description {}
+
+@media screen and (max-width: 1000px) {
+    .card-product {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-product {
+        width: 96%;
+    }
+
+}
