@@ -9,7 +9,7 @@ export const Banner = () => {
             <div className="banner-data">
                 <h1 className="banner-title">Make Your Orders</h1>
                 <p className="banner-paragraph">You can increase the ovary or reduce or pay</p>
-                <Button url="/basket" title="Go to basket" myStyle={{ marginLeft: "25px" }} />
+                <Button url="/basket" title="Go to basket" myStyle={{ marginLeft: "25px", width: "140px", height: "40px" }} />
             </div>
             <img className="banner-img" src={bannerImg} alt="Img of banner" />
         </div>

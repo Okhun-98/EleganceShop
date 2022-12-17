@@ -24,8 +24,10 @@ export const Basket = () => {
                 return (
                     <div className="basket-card" key={product?.id + index}>
                         <img className="basket-image" src={product?.image} />
-                        <h1 className="basket-title">{product?.title?.slice(0, 18)}</h1>
-                        <Button title="DELETE" myClick={() => deleteProduct(index)} />
+                        <div className="basket-data">
+                            <h1 className="basket-title">{product?.title?.slice(0, 18)}</h1>
+                            <Button title="DELETE" myClick={() => deleteProduct(index)} myStyle={{ width: "140px", height: "40px" }} />
+                        </div>
                     </div>
                 )
             }) : <h1 className="error-message">No product in basket...</h1>}

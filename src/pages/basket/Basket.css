@@ -14,9 +14,35 @@
     height: 150px;
 }
 
+.basket-data {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .basket-title {}
 
 .error-message {
     color: red;
     text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .basket-card {}
+
+    .basket-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .basket-title {
+        font-size: 25px;
+    }
+
+    .basket-data {
+        flex-direction: column;
+        align-items: flex-end;
+    }
 }
