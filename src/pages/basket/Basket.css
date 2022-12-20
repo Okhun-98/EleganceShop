@@ -30,7 +30,11 @@
 }
 
 @media screen and (max-width: 600px) {
-    .basket-card {}
+    .basket-card {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+
+    }
 
     .basket-image {
         width: 100px;
@@ -42,7 +46,7 @@
     }
 
     .basket-data {
-        flex-direction: column;
+
         align-items: flex-end;
     }
 }

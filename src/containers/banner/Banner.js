@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { Button } from "../../components/button/Button"
 import bannerImg from "../../images/muslim1.jpeg"
 import "./Banner.css"

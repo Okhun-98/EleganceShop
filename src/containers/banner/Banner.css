@@ -60,12 +60,12 @@
 
     .banner-title {
         margin: 0px;
-        font-size: 30px;
-        color: greenyellow;
+        font-size: 35px;
+        color: rgb(0, 0, 0);
     }
 
     .banner-paragraph {
-        color: yellow;
-        font-size: 20px;
+        color: rgb(0, 0, 0);
+        font-size: 25px;
     }
 }
