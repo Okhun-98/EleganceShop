@@ -32,24 +32,27 @@
 @media screen and (max-width: 600px) {
     .basket-card {
         flex-direction: row-reverse;
-        justify-content: center;
+        justify-content: space-between;
+        margin-right: 20px;
 
     }
 
     .basket-image {
         width: 100px;
         height: 100px;
+        position: absolute;
     }
 
     .basket-title {
         font-size: 17px;
-        align-items: flex-end;
+        flex-wrap: wrap;
     }
 
     .basket-data {
         flex-direction: column;
         align-items: flex-end;
         margin-right: 110px;
+        align-items: center;
 
     }
 }
