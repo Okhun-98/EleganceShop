@@ -11,7 +11,9 @@ function App() {
     <Context.Provider value={{ valueBasket, setValueBasket }} >
       <BrowserRouter>
         <Navbar />
-        <Router />
+        <div className='app'>
+          <Router />
+        </div>
       </BrowserRouter>
     </Context.Provider>
   );

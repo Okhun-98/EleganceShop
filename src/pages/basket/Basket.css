@@ -29,30 +29,34 @@
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-    .basket-card {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        margin-right: 25px;
-
+@media screen and (max-width:700px) {
+    .basket-title {
+        font-size: 18px;
     }
 
     .basket-image {
-        width: 100px;
+        width: 80px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .basket-card {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .basket-image {
+        width: 60px;
         height: 100px;
-        position: absolute;
     }
 
     .basket-title {
         font-size: 17px;
-        flex-wrap: wrap;
     }
 
     .basket-data {
         flex-direction: column;
-        align-items: flex-end;
-        margin-right: 110px;
-        align-items: center;
-
+        align-items: flex-start;
     }
 }

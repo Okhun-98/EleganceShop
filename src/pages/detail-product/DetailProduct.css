@@ -1,8 +1,9 @@
+.detail-container {}
+
 .detail-product {
     display: flex;
     justify-content: space-around;
     padding-top: 35px;
-    overflow-y: auto;
 }
 
 .detail-image {
