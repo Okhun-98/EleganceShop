@@ -23,7 +23,6 @@ export const DetailProduct = () => {
         setValueBasket([...valueBasket, productBuy])
     }
     return (
-        <div className="detail-container">
             <div className="detail-product" >
                 <img className="detail-image" src={product?.image} />
                 <div className="detail-data">
@@ -33,6 +32,5 @@ export const DetailProduct = () => {
                     <Button myStyle={{ backgroundColor: "black", color: "red" }} title="Add to busket" myClick={() => addToBasket(product)} />
                 </div>
             </div>
-        </div>
     )
 }
