@@ -20,7 +20,7 @@ export const DetailProduct = () => {
     }
 
     const addToBasket = (productBuy) => {
-        setValueBasket([...valueBasket, productBuy])
+        setValueBasket([productBuy, ...valueBasket])
     }
     return (
         <div className="detail-product" >

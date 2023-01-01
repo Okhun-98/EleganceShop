@@ -1,21 +1,16 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { Button } from "../../components/button/Button"
+import { FormAddress } from "../../containers/form-address/FormAddress"
 import { Context } from "../../context/Context"
 import "./Basket.css"
 
 export const Basket = () => {
     const { valueBasket, setValueBasket } = useContext(Context)
+    const [isOpenForm, setIsOpenForm] = useState(false)
 
     const deleteProduct = (index) => {
         valueBasket?.splice(index, 1)
         setValueBasket([...valueBasket])
-        // const results = valueBasket.filter((product, i) => {
-        //     if (index !== i) {
-        //         return product
-        //     }
-        // })
-
-        // setValueBasket(results)
     }
 
     return (
@@ -31,6 +26,10 @@ export const Basket = () => {
                     </div>
                 )
             }) : <h1 className="error-message">No product in basket...</h1>}
+            {isOpenForm && <FormAddress />}
+            {valueBasket?.length && <div className="btn-buy">
+                <Button title="TO BUY" myClick={() => setIsOpenForm(true)} myStyle={{ backgroundColor: "green", width: "100px", height: "30px" }} />
+            </div>}
         </div>
     )
 }

@@ -8,7 +8,7 @@ export const CardProduct = ({ product }) => {
     const { valueBasket, setValueBasket } = useContext(Context)
 
     const addToBasket = (productBuy) => {
-        setValueBasket([...valueBasket, productBuy])
+        setValueBasket([productBuy, ...valueBasket])
     }
     return (
         <div className="card-product">
