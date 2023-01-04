@@ -26,7 +26,7 @@ export const Basket = () => {
                     </div>
                 )
             }) : <h1 className="error-message">No product in basket...</h1>}
-            {isOpenForm && <FormAddress />}
+            {isOpenForm && <FormAddress valueBasket={valueBasket} />}
             {valueBasket?.length && <div className="btn-buy">
                 <Button title="TO BUY" myClick={() => setIsOpenForm(true)} myStyle={{ backgroundColor: "green", width: "100px", height: "30px" }} />
             </div>}
