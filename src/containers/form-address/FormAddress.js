@@ -1,16 +1,25 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { Context } from "../../context/Context"
 import "./FormAddress.css"
 
-export const FormAddress = ({ valueBasket }) => {
+export const FormAddress = () => {
+    const { valueBasket, setValueBasket } = useContext(Context)
     const [form, setform] = useState({ userName: "", phone: "", address: "" })
     const tokenBot = "5951566489:AAGA6-XnulzlgG1eukRTn2NSm5hvvI-6KZ4"
     const url = "https://api.telegram.org/bot" + tokenBot + "/sendMessage"
 
     const send = async (event) => {
         event.preventDefault()
-        console.log(form)
-        console.log(valueBasket)
-        const message = `<b>Hello world</b>`
+        const message = `
+        <b>Data Client</b>
+        Name: ${form?.userName}
+        Phone: ${form?.phone}
+        Address: ${form?.address}
+ <b>Purches</b>
+        ${valueBasket?.map((item, index) => {
+            return `${index + 1}: ${item?.title}\n`
+        }).join(" ")}
+        `
         await fetch(url,
             {
                 headers: {
@@ -24,6 +33,11 @@ export const FormAddress = ({ valueBasket }) => {
                     parse_mode: "html"
                 })
             })
+
+        setTimeout(() => {
+            setValueBasket([])
+            window.location.href = "/"
+        }, 2000)
     }
 
     const handleChange = event => {

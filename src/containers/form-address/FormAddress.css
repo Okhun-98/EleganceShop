@@ -51,3 +51,23 @@
     will-change: scroll-position;
     font: 0.8rem sans-serif;
 }
+
+@media screen and (max-width:1000px) {
+
+    .form-address,
+    .form-input,
+    .form-label,
+    .form-title {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .form-address,
+    .form-input,
+    .form-label,
+    .form-title {
+        width: 90%;
+    }
+}
