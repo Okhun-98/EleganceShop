@@ -2,7 +2,7 @@ import { useContext, useState } from "react"
 import { Context } from "../../context/Context"
 import "./FormAddress.css"
 
-export const FormAddress = () => {
+export const FormAddress = ({ setIsOpenForm }) => {
     const { valueBasket, setValueBasket } = useContext(Context)
     const [form, setform] = useState({ userName: "", phone: "", address: "" })
     const tokenBot = "5951566489:AAGA6-XnulzlgG1eukRTn2NSm5hvvI-6KZ4"
@@ -48,6 +48,7 @@ export const FormAddress = () => {
         <div className="box-form-address">
             <form className="form-address">
                 <h1 className="form-title">Shipping Address</h1>
+                <h3 className="form-close-modal" onClick={() => setIsOpenForm(false)}>+</h3>
                 <label className="form-label">Your name</label>
                 <input type="text" className="form-input" placeholder="Enter your name" required onChange={handleChange} name="userName" />
 
