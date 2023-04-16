@@ -1,5 +1,5 @@
 import { Button } from "../../components/button/Button"
-import bannerImg from "../../images/muslim1.jpeg"
+import bannerImg from "../../images/po.jpeg"
 import "./Banner.css"
 
 export const Banner = () => {
